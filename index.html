@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://ohlitmybad.github.io/strikers/favicon.ico">
+    <title>Radar Comparison Tool</title>
+    <style>
+      body {
+        font-family: system-ui;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+  background-image: url('https://i.imgur.com/XxfHZpN.png');
+        color: black;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+max-width: 1240px;
+      }
+
+      .title {
+        font-size: 70px;
+        font-weight: bold;
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 17px;
+        color: #1f1c1c;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .button-wrapper {
+        flex-basis: calc((100% - 140px) / 2);
+        margin: 20px;
+        text-align: center;
+      }
+
+      .button {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s ease;
+      }
+
+      .button:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .description {
+        font-size: 20px;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    <style>
+  .header {
+    position: relative; /* Set the header to a relative position */
+    /* Rest of the header styles */
+  }
+
+  .button-wrapper-bottom {
+    position: absolute; /* Set the button to an absolute position */
+    bottom: 0; /* Align the button to the bottom of the header */
+    right: 0; /* Align the button to the right of the header */
+    margin: 40px;
+    text-align: center;
+  }
+ 
+      footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+</style>
+
+<div class="header">
+ 
+  <div class="button-wrapper-bottom">
+    <a href="http://twitter.com/ohlitmybad" class="button">twitter</a>
+    
+  </div>
+
+</div>
+
+      <h1 class="title">Player Comparison Tool</h1>
+      <h2 class="subtitle">Click on the position to generate radar charts</h2>
+    </div>
+    <div class="container">
+      <div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/keepers/" class="button">GOALKEEPERS</a>
+        <div class="description">• Top 10 European Leagues<br>• Top 5 South-American Leagues<br>• Minimum 500 minutes<br>= 500 keepers in database</div>
+      </div>
+      <div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/centrebacks/" class="button">CENTER BACKS</a>
+        <div class="description">• Top 10 European Leagues<br>• Minimum 1000 minutes<br>= 683 centre-backs in database</div>
+      </div>
+      <div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/fullbacks/" class="button">FULLBACKS</a>
+        <div class="description">• Top 10 European Leagues<br>• Minimum 800 minutes<br>= 666 fullbacks in database</div>
+      </div>
+      <div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/midfielders/" class="button">MIDFIELDERS</a>
+        <div class="description">• Top 10 European Leagues<br>• Top 5 South-American Leagues<br>• Minimum 800 minutes<br>= 1177 midfielders in database</div>
+      </div>
+      <div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/wingers/" class="button">WINGERS</a>
+        <div class="description">• Top 10 European Leagues<br>• Top 5 South-American Leagues<br>• Championship<br>• Minimum 500 minutes<br>= 476 wingers in database</div>
+      </div>
+<div class="button-wrapper">
+        <a href="http://ohlitmybad.github.io/strikers/" class="button">STRIKERS</a>
+        <div class="description">• Top 10 European Leagues<br>• Top 5 South-American Leagues<br>• Championship<br>• Minimum 1000 minutes<br>= 680 strikers in database</div></div>
+
+ <footer>
+      <p><b><u>Instructions</u>:</b><br><br>• Search with last name only, it will not find "Kylian"<br>
+• Search is sensitive to special characters, it will not find "mbappe" but will find "mbappé"<br>
+• No spaces at the end<br>
+• No need to enter full name, it will find "mba"<br>• If the player doesn't appear, he is either out of the database or there is a typo<br><br>Data from 2022/23 season, all competitions (club and country). Accurate as of 28/04/2023.<br><br>Made by <a href="https://twitter.com/ohlitmybad">@ohlitmybad</a> with WyScout data<br></p>
+    </footer>
+</body>
+</html>
