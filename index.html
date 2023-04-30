@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,55 +14,92 @@
     <style>
       body {
         font-family: system-ui;
-        background-color: #f2f2f2;
+        background-color: #FFFFFF;
         margin: 0;
         padding: 0;
+        font-size: 14px;
       }
 
       .header {
   background-image: url('https://i.imgur.com/XxfHZpN.png');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 40% 45%;
+  background-position: 400px -5px;
         color: black;
         text-align: center;
-        padding: 20px;
+        padding: 40px;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-max-width: 1240px;
+        align-items: flex-start;
+        flex-flow: column;
+max-width: 1900px;
+
+
       }
 
       .title {
-        font-size: 70px;
+        font-size: 69px;
         font-weight: bold;
-        margin: 0;
-        padding: 30px;
+        margin: 0px;
+        padding: 0px;
         text-align: center;
+        margin-left: 27%;
+        
       }
 
       .subtitle {
-        font-size: 17px;
+        font-size: 18px;
         color: #1f1c1c;
-        margin: 0;
-        padding: 10px;
+        margin: 0px;
+        padding: 0px;
         text-align: center;
+        margin-left: 38%;
+        line-height: 2;
+        
+       
       }
+      
+      .subtitle2 {
+        font-size: 14px;
+        color: #FFFFFF;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 34%;
+        line-height: 2;
+        background-color: #F7384F;
+        border: 1px solid white;
+        border-radius: 10px;
+       text-height: 1px;
+        text-decoration: none;
+        width: 500px;
+        
+       
+      }
+      
 
       .container {
         max-width: 960px;
         margin: 0 auto;
-        padding: 20px;
+        padding: -10px;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        line-height: 1.6;
+        font-size: 16px;
+        
       }
 
       .button-wrapper {
         flex-basis: calc((100% - 140px) / 2);
         margin: 20px;
         text-align: center;
+        
       }
 
       .button {
@@ -74,19 +113,39 @@ max-width: 1240px;
         font-size: 24px;
         font-weight: bold;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.2s ease;
+        transition: background-color 0.1s ease;
+        
+      }
+      .button2 {
+        display: block;
+        background-color: #1DA1F2;
+        color: white;
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.1s ease;
       }
 
       .button:hover {
         background-color: white;
         color: black;
       }
+      .button2:hover {
+        background-color: white;
+        color: #1DA1F2;
+      }
 
       .description {
-        font-size: 20px;
-        color: #666666;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        
       }
 
     
@@ -103,62 +162,82 @@ max-width: 1240px;
   .button-wrapper-bottom {
     position: absolute; /* Set the button to an absolute position */
     bottom: 0; /* Align the button to the bottom of the header */
-    right: 0; /* Align the button to the right of the header */
-    margin: 40px;
+    right: 10; /* Align the button to the bottom of the header */
+    margin: 10px;
     text-align: center;
+    margin-left: 200%;
   }
+  
  
       footer {
   background-color: #333333;
-  color: white;
-  padding: 20px;
+  background-color: white;
+  color: black;
+  padding: -10px;
   box-sizing: border-box;
   text-align: center;
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  height: 100px;
+  margin: 20px;
+  
+        
 }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+}
+
+
+
 
 </style>
 
 <div class="header">
  
+</header>
   <div class="button-wrapper-bottom">
-    <a href="http://twitter.com/ohlitmybad" class="button">twitter</a>
-    
+    <a href="http://twitter.com/ohlitmybad" class="button2">twitter</a>
+
+     
+  </nav>
   </div>
 
 </div>
 
+
       <h1 class="title">Player Comparison Tool</h1>
-      <h2 class="subtitle">Click on a position to generate radar charts</h2>
+    
+      <h3 class="subtitle2"></b>• Click on a position to generate radar charts<br>• Search with the last name only, it will find "haaland" but not "erling"<br>
+• No need to enter full name, it will find "haa"<br>• No space at the end of the search<br>
     </div>
     <div class="container">
       <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/keepers/" class="button">GOALKEEPERS</a>
+        <a href="http://ohlitmybad.github.io/keepers/" class="button">GOALKEEPERS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 1000 minutes<br>= 311 keepers in database</div>
       </div>
       <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/centrebacks/" class="button">CENTRE BACKS</a>
+        <a href="http://ohlitmybad.github.io/centrebacks/" class="button">CENTRE BACKS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 1000 minutes<br>= 859 centre-backs in database</div>
       </div>
       <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/fullbacks/" class="button">FULLBACKS</a>
+        <a href="http://ohlitmybad.github.io/fullbacks/" class="button">FULLBACKS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 1000 minutes<br>= 757 fullbacks in database</div>
       </div>
       <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/midfielders/" class="button">MIDFIELDERS</a>
+        <a href="http://ohlitmybad.github.io/midfielders/" class="button">MIDFIELDERS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 800 minutes<br>= 1179 midfielders in database</div>
       </div>
       <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/wingers/" class="button">WINGERS</a>
+        <a href="http://ohlitmybad.github.io/wingers/" class="button">WINGERS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 700 minutes<br>= 645 wingers in database</div>
       </div>
 <div class="button-wrapper">
-        <a href="http://ohlitmybad.github.io/strikers/" class="button">STRIKERS</a>
+        <a href="http://ohlitmybad.github.io/strikers/" class="button">STRIKERS&nbsp;&nbsp;&nbsp;&#10095;</a>
         <div class="description">• Top 10 European Leagues<br>• Top 2 South-American Leagues<br>• Championship<br>• Minimum 1000 minutes<br>= 650 strikers in database</div></div>
 
  <footer>
-      <p><b><u>Instructions</u>:</b><br><br>• Search with the last name only, it will find "haaland" but not "erling"<br>
-• No need to enter full name, it will find "haa"<br>• No space at the end of the search<br><br>Data from 2022/23 season, all competitions (club and country). Accurate as of 29/04/2023.<br><br>Made by <a href="https://twitter.com/ohlitmybad">@ohlitmybad</a> with WyScout data<br></p>
+      <p><b><br>Data from 2022/23 season, all competitions (club and country). Accurate as of 29/04/2023.<br>Made by <a href="https://twitter.com/ohlitmybad">@ohlitmybad</a> with WyScout data.<br></b></p>
     </footer>
 </body>
+
