@@ -1,13 +1,9 @@
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.49, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=0.52, user-scalable=no">
 <link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
   <title translate="no">DataMB | Compare Players</title>
   <meta property="og:image" content="https://i.imgur.com/MOduM8G.png">
@@ -20,21 +16,17 @@
 	
 	
 	<style>
+       body, html {
+            margin: 0;
+            padding: 0;
+        }
         iframe {
-            width: 100%;
-            height: 707px;
+            display: block;
+            width: 100vw;
+            height: 890px;
             border: none; /* Remove iframe borders if desired */
-            display: none; /* Hide all iframes initially */
         }
 
-
-#positionSelect {
-height:32px;
-margin-left: 8px;
-Font-size: 18px;
-color: grey;
-width: 25%;
-}
 
 
 .header {
@@ -45,6 +37,7 @@ width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+background: #ececec;
 }
 
 .header .logo {
@@ -164,7 +157,7 @@ body.dark-mode .dark-mode-toggle .toggle-icon::before {
 <header class="header">
   <div class="logo">
     <a href="http://datamb.football">
-        <img src="https://i.imgur.com/UurMbGS.png" alt="Header Logo" /></a>
+        <img src="https://i.imgur.com/UurMbGS.png" alt="Football player statistics radar chart comparison" /></a>
     <div class="logo-text"><a href="http://datamb.football">Radars</a></div>
   </div>
   <nav class="navigation">
@@ -212,21 +205,9 @@ body.dark-mode .dark-mode-toggle .toggle-icon::before {
   gtag('config', 'G-PSBMXX80EF');
 </script>
 
-<div class="dark-mode-toggle" onclick="toggleDarkMode()">
-    <div class="toggle-icon"></div>
-  </div>
 <body>
-    <label for="positionSelect"></label>
-    <select id="positionSelect">
-        <option value="" selected disabled>Choose a position</option>
-        <option value="goalkeeper">Goalkeeper</option>
-        <option value="centreback">Centre-back</option>
-        <option value="fullback">Full-back</option>
-        <option value="midfielder">Midfielder</option>
-        <option value="winger">Winger</option>
-        <option value="striker">Striker</option>
-        <option value="team">Team radars</option>
-    </select>
+ 
+
 
    <script>
 
@@ -235,22 +216,10 @@ function generateSrc(_0x453324){var _0x4b826e=atob(_0x453324);return _0x4b826e;}
 
     <iframe id="goalkeeperIframe"></iframe>
 
-    <iframe id="centrebackIframe"></iframe>
-
-    <iframe id="fullbackIframe"></iframe>
-
-    <iframe id="midfielderIframe"></iframe>
-
-    <iframe id="wingerIframe"></iframe>
-
-    <iframe id="strikerIframe"></iframe>
-
-      <iframe id="teamIframe"></iframe>
 
 
 
-<script>
-var _0xc8906a=_0x5800;function _0x5800(_0x3fcda8,_0x5d1396){var _0x158480=_0x1584();return _0x5800=function(_0x580068,_0x432db1){_0x580068=_0x580068-0x110;var _0x55333=_0x158480[_0x580068];return _0x55333;},_0x5800(_0x3fcda8,_0x5d1396);}function _0x1584(){var _0x1705e1=['wingerIframe','10XUPHyQ','goalkeeperIframe','getElementById','561295MIadxC','2666264CvHFre','src','1207104xpjxfF','fullbackIframe','4135pEvJRZ','2915ORplaL','54708juzynp','midfielderIframe','2bXUSHc','70vqCcWB','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTl0L2luZGV4Lmh0bWw=','1860cPbfXp','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTcvaW5kZXguaHRtbA==','strikerIframe','535671QPukks','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTUvaW5kZXguaHRtbA==','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTQvaW5kZXguaHRtbA==','525318cZJsvq','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTMvaW5kZXguaHRtbA==','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTYvaW5kZXguaHRtbA=='];_0x1584=function(){return _0x1705e1;};return _0x1584();}(function(_0x1e2192,_0x10677c){var _0x4a3a3e=_0x5800,_0x4ffb4a=_0x1e2192();while(!![]){try{var _0x2b5f13=-parseInt(_0x4a3a3e(0x11c))/0x1*(-parseInt(_0x4a3a3e(0x125))/0x2)+-parseInt(_0x4a3a3e(0x11f))/0x3+parseInt(_0x4a3a3e(0x128))/0x4*(parseInt(_0x4a3a3e(0x121))/0x5)+-parseInt(_0x4a3a3e(0x115))/0x6*(parseInt(_0x4a3a3e(0x126))/0x7)+-parseInt(_0x4a3a3e(0x11d))/0x8+-parseInt(_0x4a3a3e(0x112))/0x9*(parseInt(_0x4a3a3e(0x119))/0xa)+-parseInt(_0x4a3a3e(0x122))/0xb*(-parseInt(_0x4a3a3e(0x123))/0xc);if(_0x2b5f13===_0x10677c)break;else _0x4ffb4a['push'](_0x4ffb4a['shift']());}catch(_0x324481){_0x4ffb4a['push'](_0x4ffb4a['shift']());}}}(_0x1584,0x75fd5),document['getElementById'](_0xc8906a(0x11a))[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x116)),document['getElementById']('centrebackIframe')[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x114)),document[_0xc8906a(0x11b)](_0xc8906a(0x120))[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x113)),document[_0xc8906a(0x11b)](_0xc8906a(0x124))[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x117)),document[_0xc8906a(0x11b)](_0xc8906a(0x118))[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x110)),document['getElementById'](_0xc8906a(0x111))[_0xc8906a(0x11e)]=generateSrc('aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTgvaW5kZXguaHRtbA=='),document[_0xc8906a(0x11b)]('teamIframe')[_0xc8906a(0x11e)]=generateSrc(_0xc8906a(0x127)));
+<script>function _0x4cb4(_0x18f904,_0x475c25){var _0x44b38c=_0x44b3();return _0x4cb4=function(_0x4cb489,_0xc1fbb3){_0x4cb489=_0x4cb489-0xa5;var _0x326ecc=_0x44b38c[_0x4cb489];return _0x326ecc;},_0x4cb4(_0x18f904,_0x475c25);}var _0x14a001=_0x4cb4;(function(_0x356656,_0x1cdabf){var _0x31ba54=_0x4cb4,_0x193061=_0x356656();while(!![]){try{var _0x5bc1b0=parseInt(_0x31ba54(0xaa))/0x1+-parseInt(_0x31ba54(0xac))/0x2+parseInt(_0x31ba54(0xad))/0x3+parseInt(_0x31ba54(0xb0))/0x4*(parseInt(_0x31ba54(0xa9))/0x5)+parseInt(_0x31ba54(0xab))/0x6+parseInt(_0x31ba54(0xae))/0x7+-parseInt(_0x31ba54(0xa7))/0x8;if(_0x5bc1b0===_0x1cdabf)break;else _0x193061['push'](_0x193061['shift']());}catch(_0x17199b){_0x193061['push'](_0x193061['shift']());}}}(_0x44b3,0x71013),document[_0x14a001(0xaf)](_0x14a001(0xa5))[_0x14a001(0xa8)]=generateSrc(_0x14a001(0xa6)));function _0x44b3(){var _0xb19137=['13444lPZAsQ','goalkeeperIframe','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTMvaW5kZXguaHRtbA==','10670408vRFylM','src','745LENuqd','119098jYWCwp','3629922PDLIzx','1120064qwjCox','1567761YPrUtW','4264673oaKaew','getElementById'];_0x44b3=function(){return _0xb19137;};return _0x44b3();}
 
 </script>
 
@@ -261,27 +230,7 @@ var _0xc8906a=_0x5800;function _0x5800(_0x3fcda8,_0x5d1396){var _0x158480=_0x158
 const _0x49d7fb=_0x3ccc;(function(_0x11c8bb,_0x2538d4){const _0x5b4669=_0x3ccc,_0x51fde0=_0x11c8bb();while(!![]){try{const _0x4cbc9a=parseInt(_0x5b4669(0x94))/0x1*(-parseInt(_0x5b4669(0x85))/0x2)+parseInt(_0x5b4669(0x8c))/0x3*(parseInt(_0x5b4669(0x91))/0x4)+parseInt(_0x5b4669(0x9c))/0x5*(parseInt(_0x5b4669(0x99))/0x6)+-parseInt(_0x5b4669(0x97))/0x7+-parseInt(_0x5b4669(0x9d))/0x8+parseInt(_0x5b4669(0x9e))/0x9+-parseInt(_0x5b4669(0x86))/0xa*(-parseInt(_0x5b4669(0x8f))/0xb);if(_0x4cbc9a===_0x2538d4)break;else _0x51fde0['push'](_0x51fde0['shift']());}catch(_0x37740a){_0x51fde0['push'](_0x51fde0['shift']());}}}(_0x1ea6,0xf337b));function _0x3ccc(_0x9469f5,_0x626211){const _0x1ea631=_0x1ea6();return _0x3ccc=function(_0x3ccc2c,_0x185b01){_0x3ccc2c=_0x3ccc2c-0x85;let _0x5ec680=_0x1ea631[_0x3ccc2c];return _0x5ec680;},_0x3ccc(_0x9469f5,_0x626211);}function _0x1ea6(){const _0xe677e9=['positionSelect','102076MHzpez','9070340wSXlFb','dark-mode-iframe','querySelector','getElementsByTagName','querySelectorAll','iframe','45132ZJYPYG','value','body','11KeFVNU','data','28rVeEcb','block','getElementById','15CoFaes','style','addEventListener','4215820rnPcNB','toggle','6OvfONj','toggleDarkMode','display','7988490tshEkV','12254576hvptXP','11572479TEGhZR','classList'];_0x1ea6=function(){return _0xe677e9;};return _0x1ea6();}const positionSelect=document[_0x49d7fb(0x93)](_0x49d7fb(0xa0)),iframes=document[_0x49d7fb(0x89)](_0x49d7fb(0x8b));positionSelect[_0x49d7fb(0x96)]('change',function(){const _0x20c6f6=_0x49d7fb,_0x45cc91=this[_0x20c6f6(0x8d)];for(const _0x2e6d7f of iframes){_0x2e6d7f[_0x20c6f6(0x95)][_0x20c6f6(0x9b)]='none';}if(_0x45cc91){const _0x3593c8=document[_0x20c6f6(0x8a)]('#'+_0x45cc91+'Iframe');for(const _0x2b8f9e of _0x3593c8){_0x2b8f9e['style'][_0x20c6f6(0x9b)]=_0x20c6f6(0x92);}}}),window[_0x49d7fb(0x96)]('message',function(_0x38701a){const _0x4533de=_0x49d7fb;if(_0x38701a[_0x4533de(0x90)]===_0x4533de(0x9a)){const _0x348dd8=document[_0x4533de(0x88)](_0x4533de(0x8e));_0x348dd8[_0x4533de(0x9f)][_0x4533de(0x98)](_0x4533de(0x87));}});
 </script>
 
-<script>
 
-    // Function to toggle dark mode
-    function toggleDarkMode() {
-      const body = document.querySelector("body");
-      body.classList.toggle("dark-mode");
-
-      // Store the user's preference in local storage
-      const isDarkMode = body.classList.contains("dark-mode");
-      localStorage.setItem("darkMode", isDarkMode);
-    }
-
-    // Check if user has a stored preference for dark mode
-    const storedDarkMode = localStorage.getItem("darkMode");
-
-    if (storedDarkMode === "true") {
-      const body = document.querySelector("body");
-      body.classList.add("dark-mode");
-    }
-
-  </script>
 
 <div id="taboola-below-article-thumbnails"></div>
 <script type="text/javascript">
