@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+      <meta name="viewport" content="width=device-width">
 <meta name="language" content="en">
 <link rel="alternate" hreflang="en" href="https://datamb.football/radars" />
 <link rel="alternate" hreflang="x-default" href="https://datamb.football/radars" />
@@ -14,7 +15,23 @@
   <meta name="twitter:description" content="Radar Comparison Tool">
   <meta name="twitter:image" content="https://datamb.football/vignettes/radars.png">
   <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+<script>
+  (function() {
+      var width = window.innerWidth;
+      var viewportMeta = document.querySelector('meta[name="viewport"]');
+      if (viewportMeta) {
+if (width < 770) {
+	      
+      var initialScale = width / 770;
+viewportMeta.setAttribute('content', 'width=device-width, initial-scale=' + initialScale);
+} else {
+            var fixedScale = 1;
+	viewportMeta.setAttribute('content', 'width=device-width, initial-scale=' + fixedScale);
 
+  }
+    } 
+})();
+</script>
 
     <style>
              .hidden-subtitle {
@@ -785,3 +802,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </html>
+
