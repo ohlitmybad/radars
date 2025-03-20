@@ -6,6 +6,7 @@
 <link rel="canonical" href="https://datamb.football/radars/" />
 <link rel="alternate" hreflang="x-default" href="https://datamb.football/radars" />
 <link rel="alternate" hreflang="en" href="https://datamb.football/radars/?lang=en" />
+<link rel="alternate" hreflang="fr" href="https://datamb.football/radars/?lang=fr" />
 <link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
   <title data-i18n="meta.title">DataMB | Compare Players</title>
   <meta property="og:image" content="https://datamb.football/vignettes/radars.png">
@@ -763,7 +764,9 @@ function _0x5707(_0xd20fa7,_0x4d36b5){const _0x4dcd69=_0x4dcd();return _0x5707=f
             if (value) {
               if (element.tagName === 'META') {
               element.setAttribute('content', value);
-          } else if (value.includes('<')) {
+          } else if (element.tagName === 'INPUT') {
+        element.setAttribute('placeholder', value);
+    } else if (value.includes('<')) {
               element.innerHTML = value;
           } else {
               element.textContent = value;
