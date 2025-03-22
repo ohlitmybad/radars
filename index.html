@@ -502,11 +502,29 @@ viewportMeta.setAttribute('content', 'width=device-width, initial-scale=' + init
      height: 200px;
      opacity: 0.7;
 }
+@media (hover: hover) {
  .button:hover {
      background-color: #1a1a1a;
      color: white;
      transform: translateY(-5px);
      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button3:hover {
+     background-color: white;
+     color: #1a1a1a;
+     transform: translateY(-5px);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+ .dark-mode .button:hover {
+     background-color: #f5f7fa;
+     color: var(--background-color);
+}
+ .dark-mode .button3:hover {
+     background-color: var(--container-bg);
+     color: var(--text-color);
+}
+
 }
  .button3 {
      display: block;
@@ -522,28 +540,16 @@ viewportMeta.setAttribute('content', 'width=device-width, initial-scale=' + init
      position: relative;
      overflow: hidden;
 }
- .button3:hover {
-     background-color: white;
-     color: #1a1a1a;
-     transform: translateY(-5px);
-     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
  .dark-mode .button {
      background-color: var(--container-bg);
      color: var(--text-color);
      box-shadow: 0 4px 10px rgba(196, 196, 196, 0.1);
 }
- .dark-mode .button:hover {
+
+
+.dark-mode .button3 {
      background-color: #f5f7fa;
      color: var(--background-color);
-}
- .dark-mode .button3 {
-     background-color: #f5f7fa;
-     color: var(--background-color);
-}
- .dark-mode .button3:hover {
-     background-color: var(--container-bg);
-     color: var(--text-color);
 }
 
  .div2 {
