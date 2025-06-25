@@ -36,8 +36,14 @@
     "strikers": {
       "title": "STRIKERS",
       "description": "Compare strikers (centre-forwards)"
-    }
-  },
+    },
+      "goalkeeper": "Goalkeeper",
+      "centreback": "Centre-back",
+      "fullback": "Full-back",
+      "midfielder": "Midfielder",
+      "winger": "Winger",
+      "striker": "Striker"
+    },
   "pro": {
     "title": "PRO — More leagues, More seasons"
   },
