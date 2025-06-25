@@ -36,8 +36,14 @@
     "strikers": {
       "title": "BUTEURS",
       "description": "Comparaison de buteurs (avant-centres)"
-    }
-  },
+    },
+      "goalkeeper": "Gardien",
+      "centreback": "Défenseur",
+      "fullback": "Latéral",
+      "midfielder": "Milieu",
+      "winger": "Ailier",
+      "striker": "Buteur"
+    },
   "pro": {
     "title": "PRO — Plus de ligues, Plus de saisons"
   },
