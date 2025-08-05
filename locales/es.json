@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "DataMB | Comparar Jugadores",
+    "description": "Compara estadísticas de jugadores de fútbol de las 7 principales ligas. Usa nuestras comparaciones de radar y otras herramientas para visualizar datos de la Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Primeira Liga y más ligas."
+  },
+  "header": {
+    "teams": "Equipos",
+    "pro": "Pro",
+    "guide": "Guía"
+  },
+  "search": {
+    "placeholder": "Introduce un nombre de equipo o jugador..."
+  },
+  "positions": {
+    "title": "7 Principales Ligas — 2023/24, 2024/25",
+    "goalkeepers": {
+      "title": "PORTEROS",
+      "description": "Compara porteros"
+    },
+    "centrebacks": {
+      "title": "CENTRALES",
+      "description": "Compara defensas centrales"
+    },
+    "fullbacks": {
+      "title": "LATERALES",
+      "description": "Compara laterales y carrileros"
+    },
+    "midfielders": {
+      "title": "CENTROCAMPISTAS",
+      "description": "Compara centrocampistas defensivos, centrales y ofensivos"
+    },
+    "wingers": {
+      "title": "EXTREMOS",
+      "description": "Compara extremos y centrocampistas ofensivos"
+    },
+    "strikers": {
+      "title": "DELANTEROS",
+      "description": "Compara delanteros (centrodelanteros)"
+    },
+    "goalkeeper": "Portero",
+    "centreback": "Central",
+    "fullback": "Lateral",
+    "midfielder": "Centrocampista",
+    "winger": "Extremo",
+    "striker": "Delantero"
+  },
+  "pro": {
+    "title": "PRO — Más ligas, Más temporadas"
+  },
+  "footer": {
+    "rights": "© Todos los derechos reservados",
+    "privacy": "Privacidad",
+    "contact": "Contacto",
+    "about": "Acerca de"
+  }
+} 
