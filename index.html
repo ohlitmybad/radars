@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <meta name="viewport" content="width=device-width">
-<meta name="language" content="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="language" content="en">
 <link rel="canonical" href="https://datamb.football/radars/" />
 <link rel="alternate" hreflang="x-default" href="https://datamb.football/radars" />
   <link rel="alternate" hreflang="en" href="https://datamb.football/radars/?lang=en" />
@@ -20,8 +20,17 @@
   <meta name="twitter:image" content="https://datamb.football/vignettes/radars.png">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+<script>
+const width = window.innerWidth;
 
+if (width <= 770) {
+  const scale = width / 770;
+  const widthPercent = 100 / scale;
 
+  document.documentElement.style.setProperty('--dynamic-width', widthPercent + '%');
+  document.documentElement.style.setProperty('--dynamic-scale', scale);
+}
+</script>
     <style>
  .hidden-subtitle {
      display: none;
@@ -33,11 +42,27 @@
      padding: 0;
      font-size: 14px;
 }
-		@media (hover: none) and (pointer: coarse) {
-    body {
-        width: 770px;
-    }
+@media (max-width: 770px) {
+body {
+overflow-x: hidden;
+overflow-y: auto;
+height: 100vh;
+min-height: 100vh;
+max-height: 100vh;
+position: relative;
 }
+#full-page {
+ width: var(--dynamic-width);
+  transform: scale(var(--dynamic-scale));
+  transform-origin: top left;
+  min-width: 770px;
+  position: absolute;
+  top: 0;
+  left: 0;
+overflow: hidden; /* Add this line */
+
+}
+	}
 
  :root {
      --primary-color: #3498db;
@@ -580,33 +605,6 @@ body.dark-mode #autocompleteBoxmodal a, body.dark-mode #autocompleteBoxmodal2 a 
 
 
 
-<header class="header">
-  <div class="logo">
-    <a href="https://datamb.football">
-        <img src="https://datamb.football/logo.png" alt="Player Radars | Football player statistics comparison | Radar comparison tool | Top 7 European Leagues" /></a>
-    <div class="logo-text"><a href="https://datamb.football">&nbsp;Radars</a></div>
-  </div>
-  <nav class="navigation">
-    <a href="https://datamb.football/teams" class="button10" data-i18n="header.teams">Teams</a>
-    <a href="https://datamb.football/join" class="button10" data-i18n="header.pro">Pro</a>
-    <a href="https://datamb.football/guide" class="button10" data-i18n="header.guide">Guide</a>
-  </nav>
-  <div class="header-right">
-  <div class="search-container">
-    <button id="searchButtonmodal"><iconify-icon icon="ion:search-outline"></iconify-icon></button>
-</div>
-  <div class="language-switcher-container">
-    <button class="language-button" id="languageButton">
-      <iconify-icon icon="heroicons:globe-alt"></iconify-icon>
-    </button>
-        <div class="language-dropdown" id="languageDropdown">
-      <a href="?lang=en" class="language-option"><iconify-icon icon="flag:gb-4x3"></iconify-icon>English</a>
-      <a href="?lang=fr" class="language-option"><iconify-icon icon="flag:fr-4x3"></iconify-icon>Français</a>
-      <a href="?lang=es" class="language-option"><iconify-icon icon="flag:es-4x3"></iconify-icon>Español</a>
-      <a href="?lang=tr" class="language-option"><iconify-icon icon="flag:tr-4x3"></iconify-icon>Türkçe</a>
-    </div>
-  </div></div>
-</header>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7677714701428206"
 crossorigin="anonymous"></script>
@@ -634,6 +632,37 @@ gtag('config', 'G-PSBMXX80EF');
 
 
   <body>
+	  <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+<div class="toggle-icon"></div>
+</div>
+	  <div id="full-page">
+<header class="header">
+  <div class="logo">
+    <a href="https://datamb.football">
+        <img src="https://datamb.football/logo.png" alt="Player Radars | Football player statistics comparison | Radar comparison tool | Top 7 European Leagues" /></a>
+    <div class="logo-text"><a href="https://datamb.football">&nbsp;Radars</a></div>
+  </div>
+  <nav class="navigation">
+    <a href="https://datamb.football/teams" class="button10" data-i18n="header.teams">Teams</a>
+    <a href="https://datamb.football/join" class="button10" data-i18n="header.pro">Pro</a>
+    <a href="https://datamb.football/guide" class="button10" data-i18n="header.guide">Guide</a>
+  </nav>
+  <div class="header-right">
+  <div class="search-container">
+    <button id="searchButtonmodal"><iconify-icon icon="ion:search-outline"></iconify-icon></button>
+</div>
+  <div class="language-switcher-container">
+    <button class="language-button" id="languageButton">
+      <iconify-icon icon="heroicons:globe-alt"></iconify-icon>
+    </button>
+        <div class="language-dropdown" id="languageDropdown">
+      <a href="?lang=en" class="language-option"><iconify-icon icon="flag:gb-4x3"></iconify-icon>English</a>
+      <a href="?lang=fr" class="language-option"><iconify-icon icon="flag:fr-4x3"></iconify-icon>Français</a>
+      <a href="?lang=es" class="language-option"><iconify-icon icon="flag:es-4x3"></iconify-icon>Español</a>
+      <a href="?lang=tr" class="language-option"><iconify-icon icon="flag:tr-4x3"></iconify-icon>Türkçe</a>
+    </div>
+  </div></div>
+</header>
 
         <h1 class="hidden-subtitle">Player Comparison Tool</h2>
 
@@ -772,9 +801,7 @@ gtag('config', 'G-PSBMXX80EF');
 
 
 
-<div class="dark-mode-toggle" onclick="toggleDarkMode()">
-<div class="toggle-icon"></div>
-</div>
+
 
 <script>
 // Function to toggle dark mode
@@ -930,6 +957,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
+	  </div>
 </body>
 </html>
